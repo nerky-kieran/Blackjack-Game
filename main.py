@@ -1,4 +1,7 @@
 import random
+from time import *
+
+start = time.time
 
 class Card:
     def __init__(self, suit, rank):
@@ -181,3 +184,6 @@ class Game:
 
 g = Game()
 g.play()
+
+stop = time.time()
+print(start-stop)
